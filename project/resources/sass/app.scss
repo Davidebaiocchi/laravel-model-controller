@@ -1,1 +1,10 @@
-//
+@import url('partials/header.scss');
+@import url('partials/main.scss');
+@import url('partials/footer.scss');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

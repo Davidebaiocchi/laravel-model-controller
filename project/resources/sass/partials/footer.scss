@@ -1,0 +1,29 @@
+footer {
+    height: 120px;
+    line-height: 120px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.left {
+    color: white;
+}
+
+footer span {
+    border: 3px solid rgb(0, 119, 255);
+    height: 30px;
+    width: 130px;
+    padding: 10px;
+}
+
+.right {
+    color: rgb(0, 119, 255);
+}
+
+img {
+    height: 30px;
+    margin-left: 10px;
+}
