@@ -16,8 +16,8 @@
         <div class="rows">
             @foreach($albums as $album)
         <div class="card">
-            <img src=" {{ $album['thumb']}}" alt="{{ $album['series']}} ">
-            <p> {{ $album['series'] }} </p>
+            <img src=" {{ $album['thumb'] ?? '' }}" alt="{{ $album['series'] ?? ''}} ">
+            <p> {{ $album['series'] ?? '' }} </p>
         </div>
         @endforeach
         </div>

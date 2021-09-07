@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Comic;
 class ComicController extends Controller
 {
     public function comics() {
-        $comics = config('comics');
-        $data = ['albums' => $comics];
-        return view('comics')->name('comics', $data);
+        
+        $albums = Comic::all();
+        return view('comics', ['albums' =>  config('comics') ] ); 
     }
 }
