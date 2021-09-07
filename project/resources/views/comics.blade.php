@@ -14,13 +14,14 @@
 
     <div class="albums">
         <div class="rows">
-            @foreach($albums as $album)
+            @foreach($comics as $comic)
         <div class="card">
-            <img src=" {{ $album['thumb'] ?? '' }}" alt="{{ $album['series'] ?? ''}} ">
-            <p> {{ $album['series'] ?? '' }} </p>
+            <img src=" {{ $comic['thumb'] ?? '' }}" alt="{{ $comic['series'] ?? ''}} ">
+            <p> {{ $comic['series'] ?? '' }} </p>
         </div>
         @endforeach
         </div>
+        
 
         <span class="y">
             load more
