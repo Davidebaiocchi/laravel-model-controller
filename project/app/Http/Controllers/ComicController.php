@@ -8,7 +8,7 @@ class ComicController extends Controller
 {
     public function comics() {
         
-        $stories = Comic::all();
-        return view('comics', $stories, ['albums' =>  config('comics') ] ); 
+        $comics = Comic::all();
+        return view('comic', compact('comics'));
     }
 }

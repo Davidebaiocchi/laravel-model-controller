@@ -6,8 +6,9 @@
 @section('content')
     <h1>il titolo del giorno</h1>
     <div class="container">
-        @foreach($stories as $key => $storie)
-            {{ $storie->title }}
+        @foreach($comics as $key => $comic)
+
+            {{ $comic->title }}
         @endforeach
     </div>
 @endsection
